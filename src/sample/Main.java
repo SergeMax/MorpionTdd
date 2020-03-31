@@ -13,7 +13,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         Plateau plateau = new Plateau();
-        System.out.println(plateau.getPlateau().get(0)[0]);
+        plateau.get(0)[1]=3;
+        System.out.println(plateau.toString());
     }
 
 
