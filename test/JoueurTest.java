@@ -1,22 +1,32 @@
 import org.junit.jupiter.api.Test;
 import sample.Model.Joueur;
-import sample.Model.Plateau;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.ArrayList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class JoueurTest {
 
     @Test
-    public void joueurPosePion(){
-        Joueur joueur = new Joueur();
-        Plateau plateau = new Plateau();
+    public void setName(){
+        Joueur joueur = new Joueur("Maxime",'x');
+        joueur.setName("Touria");
+        assertEquals("Touria", joueur.getNom());
 
-
-        System.out.println(plateau.getPlateau().get(0));
-
-     //   assertEquals(11, joueur.posePion(joueur.pion, plateau. ));
+    }
+    @Test
+    public void getName() {
+        Joueur  joueur  = new  Joueur ("Maxime", 'x');
+        assertEquals("Maxime", joueur.getNom());
+    }
+    @Test
+    public void setSymbol() {
+        Joueur joueur = new Joueur ("Maxime", 'x');
+        joueur.setSymbol('o');
+        assertEquals('o', joueur.getSymbol());
+    }
+    @Test
+    public void getSymbol() {
+        Joueur joueur  = new Joueur("Maxime", 'x');
+        assertEquals('x', joueur.getSymbol());
     }
 
 }
