@@ -9,6 +9,7 @@ public class Plateau {
     private Joueur[] action;
 
     public Plateau() {
+
         action = new Joueur[Taille_Plateau];
 
     }
@@ -37,6 +38,7 @@ public class Plateau {
             return action[3];
         if (action[6] != null && action[6] == action[7] && action[7] == action[8])
             return action[6];
+
 
         // Verticale
         if (action[0] != null && action[0] == action[3] && action[3] == action[6])
@@ -81,6 +83,7 @@ public class Plateau {
 
         return sb.toString();
     }
+
 
 }
 
