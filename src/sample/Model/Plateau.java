@@ -1,6 +1,7 @@
 package sample.Model;
 
 
+import sample.MyExceptions.DividedByZeroException;
 
 public class Plateau {
 
@@ -15,16 +16,16 @@ public class Plateau {
         return (1 <= Case && Case <= Taille_Plateau);
     }
 
-    public void setCase(Joueur joueur, int Case) {
+    public void setCase(Joueur joueur, int Case) throws DividedByZeroException {
         if (!CaseValide(Case))
-            throw new IllegalArgumentException(" Case choisie en dehors du tableau ");
+            throw new DividedByZeroException(" Case choisie en dehors du tableau ");
         else if (action[Case - 1] != null)
-            throw new IllegalArgumentException("La case est déjà occupée");
+            throw new DividedByZeroException("La case est déjà occupée");
         action[Case - 1] = joueur;
     }
-    public Joueur getCase(int Case) {
+    public Joueur getCase(int Case) throws DividedByZeroException {
         if (!CaseValide(Case))
-            throw new IllegalArgumentException("Case choisie en dehors du tableau ");
+            throw new DividedByZeroException("Case choisie en dehors du tableau ");
         return action[Case - 1];
     }
 

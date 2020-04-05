@@ -11,7 +11,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         Plateau plateau = new Plateau();
-        System.out.println(plateau.getPlateau().get(0)[0]);
+
     }
 
 
