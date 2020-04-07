@@ -1,6 +1,6 @@
 package Model;
 
-import sample.MyExceptions.DividedByZeroException;
+import sample.MyExceptions.illegalArgument;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import sample.Model.Joueur;
@@ -16,12 +16,12 @@ public class PlateauTest {
         int Case = 1;
         try {
             plateau.setCase(joueur, Case);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             assertEquals(plateau.getCase(Case).getNom(), joueur.getNom());
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
     }
@@ -35,14 +35,14 @@ public class PlateauTest {
             if (i % 2 == 0) {
                 try {
                     plateau.setCase(j1, i);
-                } catch (DividedByZeroException e) {
+                } catch (illegalArgument e) {
                     e.printStackTrace();
                 }
             }
             else {
                 try {
                     plateau.setCase(j2, i);
-                } catch (DividedByZeroException e) {
+                } catch (illegalArgument e) {
                     e.printStackTrace();
                 }
             }
@@ -52,14 +52,14 @@ public class PlateauTest {
             if (i % 2 == 0) {
                 try {
                     assertEquals(plateau.getCase(i), j1);
-                } catch (DividedByZeroException e) {
+                } catch (illegalArgument e) {
                     e.printStackTrace();
                 }
             }
             else {
                 try {
                     assertEquals(plateau.getCase(i), j2);
-                } catch (DividedByZeroException e) {
+                } catch (illegalArgument e) {
                     e.printStackTrace();
                 }
             }
@@ -75,17 +75,17 @@ public class PlateauTest {
         Plateau plateau = new Plateau ();
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), null);
@@ -94,47 +94,47 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), null);
@@ -142,47 +142,47 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), null);
@@ -190,47 +190,47 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), null);
@@ -238,47 +238,47 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j1, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), null);
@@ -286,47 +286,47 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau .setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j1, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j2, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j1, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j1, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j2, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j1, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau .setCase(j2, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals( plateau.gagnant(), null);
@@ -339,17 +339,17 @@ public class PlateauTest {
        Plateau plateau = new Plateau();
         try {
             plateau.setCase(joueur, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -358,17 +358,17 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(joueur, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -377,17 +377,17 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(joueur, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -400,17 +400,17 @@ public class PlateauTest {
         Plateau plateau = new Plateau();
         try {
             plateau.setCase(joueur, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -419,17 +419,17 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(joueur, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -438,17 +438,17 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(joueur, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -461,17 +461,17 @@ public class PlateauTest {
         Plateau plateau = new Plateau();
         try {
             plateau.setCase(joueur, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -480,17 +480,17 @@ public class PlateauTest {
         plateau = new Plateau();
         try {
             plateau.setCase(joueur, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         assertEquals(plateau.gagnant(), joueur);
@@ -502,47 +502,47 @@ public class PlateauTest {
 
         try {
             plateau.setCase(joueur, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 4);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 6);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 8);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
 
@@ -560,27 +560,27 @@ public class PlateauTest {
 
         try {
             plateau.setCase(joueur, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 3);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 5);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 7);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(joueur, 9);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
 
@@ -594,7 +594,7 @@ public class PlateauTest {
             Joueur joueur = new Joueur("Test", 'x');
             plateau.setCase(joueur, -1);
         }
-        catch (DividedByZeroException  ex) {
+        catch (illegalArgument ex) {
             String expectedMessage = "Case choisie en dehors du plateau";
             assertEquals(expectedMessage, ex.getMessage());
         }
@@ -609,7 +609,7 @@ public class PlateauTest {
             plateau.setCase(joueur, 1);
 
         }
-        catch (DividedByZeroException  ex) {
+        catch (illegalArgument ex) {
             String expectedMessage = "La case est déjà occupée";
             assertEquals(expectedMessage, ex.getMessage());
         }
@@ -629,12 +629,12 @@ public class PlateauTest {
 
         try {
             plateau.setCase(j1, 1);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
         try {
             plateau.setCase(j2, 2);
-        } catch (DividedByZeroException e) {
+        } catch (illegalArgument e) {
             e.printStackTrace();
         }
 
@@ -650,7 +650,7 @@ public class PlateauTest {
             plateau.getCase(10);
 
         }
-        catch (DividedByZeroException ex) {
+        catch (illegalArgument ex) {
             String expectedMessage = "Case choisie en dehors du plateau";
             assertEquals(expectedMessage, ex.getMessage());
         }
