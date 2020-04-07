@@ -15,7 +15,7 @@ public class  PartieTest {
     public void testNewPartie() {
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -114,7 +114,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -129,7 +129,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -144,7 +144,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -159,7 +159,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -174,7 +174,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -190,7 +190,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -206,7 +206,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
@@ -238,7 +238,7 @@ public class  PartieTest {
 
 
         Joueur joueur1 = new Joueur("Maxime", 'x');
-        Joueur joueur2 = new Joueur("Maxime", 'x');
+        Joueur joueur2 = new Joueur("Touria", 'x');
         Plateau plateau = new Plateau();
 
 
